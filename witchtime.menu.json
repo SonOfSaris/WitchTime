@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "witchtime",
+  "name": "WitchTime",
+  "version": "1.0",
+  "dll": "witchtime.dll",
+  "options": [
+    {"id": "enabled", "type": "toggle", "default": true,
+     "label": "Enable",
+     "description": "After a perfect dodge the game's own moment of slow motion plays as usual; then the world stays slow while Dylan moves at normal speed. Off: as in the game."},
+    {"id": "duration_ms", "type": "choice", "default": 4000,
+     "choices": [{"value": 1500, "label": "1.5 s"}, {"value": 2000, "label": "2 s"}, {"value": 2500, "label": "2.5 s"}, {"value": 3000, "label": "3 s"}, {"value": 4000, "label": "4 s"}, {"value": 5000, "label": "5 s"}, {"value": 6000, "label": "6 s"}, {"value": 8000, "label": "8 s"}],
+     "label": "Length",
+     "description": "How long it lasts in all, the game's own 0.6 s of slow motion included."},
+    {"id": "world_speed", "type": "slider", "default": 20, "min": 5, "max": 100, "step": 5,
+     "label": "World speed (%)",
+     "description": "How fast everything but Dylan runs once the game's own slow motion is over. The game's own moment goes down to 1%."},
+    {"id": "player_speed", "type": "slider", "default": 100, "min": 50, "max": 200, "step": 5,
+     "label": "Dylan's speed (%)",
+     "description": "Dylan's speed during it. 100 = normal speed."},
+    {"id": "version_warning", "type": "toggle", "default": true,
+     "label": "Warn when the mod cannot start",
+     "description": "Shows a message at start when a game update, or another mod, stops the mod from working. A game update that changes nothing the mod needs shows no message."}
+  ]
+}

@@ -1,0 +1,17 @@
+# build output
+out/
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# bytes of the game's own functions, written by tests\gen_bytes.py from the installed exe for the test rig
+tests/game_bytes.inc
+
+# development-only scripts
+patch*.py
+
+# logs and what the game writes next to the mod
+*.log
+ModMenuConfig/

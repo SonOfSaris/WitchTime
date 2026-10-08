@@ -1,0 +1,7 @@
+WitchTime changelog
+===================
+
+1.0   Release. Bullet time after a perfect dodge: the game's own 0.6 s of slow motion, then the world stays
+      slow (20%) while Dylan moves at normal speed, 4 seconds in all. Length, the world's speed and Dylan's
+      speed can be set in witchtime_config.ini or under Options > MODS (Mod Settings Menu).
+      Until now this was part of CombatRebalance (0.11 to 0.12); it is its own mod from here on.
